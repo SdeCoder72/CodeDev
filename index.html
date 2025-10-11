@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">
+                <img src="./images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#01">Courses</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="./ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+            </ul>
+
+            <!-- -----mistake----- -->
+
+            <!-- <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="#" class="btn">Get Started</a>
+                </button>
+            </ul> -->
+
+        </div>
+    </header>
+
+    <div class="container">
+
+
+        <!-- hero section  -->
+        <main>
+            <section class="hero">
+                <div class="grid two-grid-col">
+                    <div class="section-hero-data">
+                        <p class="hero-top-data">Bring Your Boldest Ideas To Life With</p>
+                        <h1 class="hero-heading ">CodeDev</h1>
+                        <p class="hero-para">Where Creativity drives Performance</p>
+                        <button class="hero-btn">Start Learning Now</button>
+                    </div>
+                    <!-- hero img  -->
+                    <div class="section-hero-img">
+                        <img src="./images/hero_img.png" alt="CodeDev Logo" class="hero-img">
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <div class="scroller-container">
+            <div class="scroller">
+                <div class="scroller-inner">
+                    <div class="scroller-item"><img src="./images/logoAnimation/css-logo.png" alt="css">HTML</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/html-logo.png" alt="html">CSS</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/js.png" alt="js">JavaScript</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/mongodb-logo.png" alt="mongodb">MongoDB
+                    </div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/react-logo.png" alt="react">React</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/express.png" alt="express">Express</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/java_logo.png" alt="java">Java</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/nodejs.png" alt="nodejs">NodeJS</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/css-logo.png" alt="css">HTML</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/html-logo.png" alt="html">CSS</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/js.png" alt="js">JavaScript</div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/mongodb-logo.png" alt="mongodb">MongoDB
+                    </div>
+                    <div class="scroller-item"><img src="./images/logoAnimation/react-logo.png" alt="react">React</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="learn computer-basics" id="01">
+            <div class="section-flex-start">
+
+                <h2 class="learn-heading autoShow">Computer Basics</h2>
+                <p class="learn-para autoShow">Start Small. Build Big. Code Your Future</p>
+            </div>
+            <div class="learn-grid-container">
+                <div class="chapter fadeUp"><a href="./ComputerFundamentals/chapter01.html"><img
+                            src="./images/binaryReprasentation-rec.jpg" alt="">
+                        <div class="intro">
+                            <h3>Binary & Data Representation</h3>
+                            <p>Binary representation is the method of expressing numbers using binary digits (bits).</p>
+                            <p>Binary numbers form the backbone of digital circuits and systems.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp">
+                    <a href="./ComputerFundamentals/chapter02.html"><img src="./images/computer-hardware-basics.jpg"
+                            alt="">
+                        <div class="intro">
+                            <h3>Computer Hardware Basics</h3>
+                            <p>Computer hardware refers to the physical components of a computer that you can see and
+                                touch. These components work together to process input and deliver output based on user
+                                instructions.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter fadeUp"><a href="./ComputerFundamentals/chapter03.html"><img src="./images/op.jpeg"
+                            alt=""></a>
+                    <div class="intro">
+                        <h3>Operating System & File Management</h3>
+                        <p>File systems are a crucial part of any operating system, providing a structured way to store,
+                            organize and manage data on storage devices such as hard drives, SSDs and USB drives.</p>
+                    </div>
+                </div>
+                <div class="chapter fadeUp"><a href="./ComputerFundamentals/chapter04.html"><img src="./images/algo.jpg"
+                            alt="">
+                        <div class="intro">
+                            <h3>Algorithms & Problem Solving</h3>
+                            <p>Algorithms play a crucial role in various fields and have many applications. Algorithms
+                                are necessary for solving complex problems efficiently and effectively.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./ComputerFundamentals/chapter05.html"><img
+                            src="./images/programming-logic.png" alt="">
+                        <div class="intro">
+                            <h3>Programming Logic & Control Flow</h3>
+                            <p>Control flow refers to the order in which statements within a program execute. While
+                                programs typically follow a sequential flow from top to bottom, there are scenarios
+                                where we need more flexibility.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./ComputerFundamentals/chapter06.html"><img
+                            src="./images/networking.jpg" alt="">
+                        <div class="intro">
+                            <h3>Basic Networking Concepts</h3>
+                            <p>A computer network is a collection of interconnected devices that share resources and
+                                information. These devices can include computers, servers, printers, and other hardware.
+                            </p>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+
+        <section class="learn html">
+            <h2 class="learn-heading autoShow">HTML</h2>
+            <p class="learn-para autoShow">Learn to code, build to inspire.Grow with every line</p>
+            <div class="learn-grid-container">
+                <div class="chapter fadeUp"><a href="./HTML/chapter01.html"><img src="./images/basic-structurehtml.png"
+                            alt="basic structure">
+                        <div class="intro">
+                            <h3>HTML Basics & Structure</h3>
+                            <p>HTML is a markup language used for structuring content on the web. It consists of
+                                elements (tags) that describe the content and structure of a webpage.</p>
+                            <p>HTML (Hypertext Markup Language) is used in over 95% of websites and is the foundation of
+                                all web pages.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./HTML/chapter02.html"><img src="./images/textFormatting.png"
+                            alt="">
+                        <div class="intro">
+                            <h3>Text Formatting & Elements</h3>
+                            <p>HTML text formatting refers to the use of specific HTML tags to modify the appearance and
+                                structure of text on a webpage. It allows you to style text in different ways, such as
+                                making it bold, italic, underlined, highlighted, or struck-through.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./HTML/chapter03.html"><img src="./images/img-anchor.png" alt="">
+                        <div class="intro">
+                            <h3>Working with Links and Images</h3>
+                            <p>Working with links and images in HTML involves using special tags to embed clickable
+                                links and display images in web pages, making the content interactive and visually
+                                appealing.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./HTML/chapter04.html"><img src="./images/tables-forms.png" alt="">
+                        <div class="intro">
+                            <h3>Tables and Forms</h3>
+                            <p>Tables in HTML are used to organize and display data in rows and columns, while forms are
+                                designed to collect user input for processing. Both tables and forms use specific HTML
+                                tags to structure their content on web pages.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./HTML/chapter05.html"><img src="./images/semantic-html.png"
+                            alt="">
+                        <div class="intro">
+                            <h3>Semantic HTML & Multimedia</h3>
+                            <p>Semantic HTML uses tags that convey the meaning and structure of web content, making it
+                                easier for browsers, search engines, and developers to interpret a page's layout and
+                                purpose.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./HTML/chapter06.html"><img src="./images/best-practices.png"
+                            alt="">
+                        <div class="intro">
+                            <h3>HTML Best Practices & Project</h3>
+                            <p>HTML best practices are established guidelines for writing HTML code that is clean,
+                                readable, maintainable, and works consistently across different browsers and devices.
+                            </p>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+
+        <section class="learn css">
+            <h2 class="learn-heading autoShow">CSS</h2>
+            <p class="learn-para autoShow">Make Creativity Your compititive edge</p>
+            <div class="learn-grid-container">
+                <div class="chapter fadeUp"><a href="./CSS/chapter01.html"><img src="./images/fundamentals-css.png"
+                            alt="">
+                        <div class="intro">
+                            <h3>CSS Fundamentals</h3>
+                            <p>CSS (Cascading Style Sheets) is the core language for styling and designing web pages,
+                                making HTML content visually attractive and user-friendly. It focuses on defining how
+                                HTML elements should appear on various devices and screen sizes, separating content
+                                (HTML) from presentation (CSS).</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./CSS/chapter02.html"><img src="./images/box-model-css.png" alt="">
+                        <div class="intro">
+                            <h3>CSS Box Model</h3>
+                            <p>The CSS Box Model is a foundational concept in web design that explains how elements are
+                                sized, spaced, and displayed on a webpage. Every HTML element is treated as a
+                                rectangular box that includes content, padding, border, and margin for precise layout
+                                control.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./CSS/chapter03.html"><img src="./images/styling-css.png" alt="">
+                        <div class="intro">
+                            <h3>Styling In CSS</h3>
+                            <p>CSS (Cascading Style Sheets) is used to set colors, fonts, spacing, layout, and even
+                                animations on a webpage. CSS separates content (HTML) from presentation, making it
+                                easier to create, maintain, and update the design of a website.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./CSS/chapter04.html"><img src="./images/responsive-css.png"
+                            alt="">
+                        <div class="intro">
+                            <h3>Responsive CSS</h3>
+                            <p>Responsive CSS is a design approach that ensures websites automatically adjust their
+                                layout, images, and content to provide an optimal viewing experience across all device
+                                types and screen sizes, from smartphones to desktops.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./CSS/chapter05.html"><img src="./images/animation-css.png" alt="">
+                        <div class="intro">
+                            <h3>CSS Animations</h3>
+                            <p>CSS animations allow smooth transitions and impressive effects on web elements by
+                                gradually changing styles using keyframes, all without the need for JavaScript. This
+                                technique is widely used to enhance interactivity.</p>
+                        </div>
+                    </a></div>
+                <div class="chapter fadeUp"><a href="./CSS/chapter06.html"><img src="./images/best-practices-css.png"
+                            alt="">
+                        <div class="intro">
+                            <h3>Advanced CSS</h3>
+                            <p>CSS variables, also known as custom properties, enable developers to store reusable
+                                values directly in the stylesheet for consistent and maintainable design across large
+                                web projects.</p>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content-para autoShow">
+                <h3>About CodeDev</h3>
+                <p>Welcome to CodeDev—your gateway to building modern, powerful websites and unlocking career
+                    opportunities in tech.</p>
+                <p>We believe anyone can become a web developer with the right guidance and resources.We want you to
+                    take your first step into learning to code right now. I'm here to help you learn the right skills
+                    you need to start a tech career step-by-step.</p>
+            </div>
+            <div class="about-content-img">
+                <img src="./images/about-us.png" alt="CodeDev image" class="autoShow2">
+            </div>
+        </section>
+
+        <footer>
+            <div class="imp-link-container">
+                <div class="imp-links">
+                    <h3>Recommended</h3>
+                    <a href="./Recommended/sites.html">Free Sites to Learn to Code</a>
+                    <a href="./Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                    <a href="./Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+                </div>
+
+                <div class="imp-links">
+                    <h3>Courses and Tutorials</h3>
+                    <a href="./HTML/chapter01.html">Learn HTML</a>
+                    <a href="./chapter01">Learn CSS</a>
+                    <a href="./index.html">Learn JavaScript</a>
+                </div>
+                <div class="imp-links">
+                    <h3>Resources/Documentations</h3>
+                    <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://coderarmy.in/#home" target="_blank">Coder Army</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <a href="" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="terms-policy">
+                    <a href="" class="contact-links">Terms of Service</a>
+                    <a href="" class="contact-links">Privacy policy</a>
+                </div>
+                <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
