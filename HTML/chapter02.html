@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>HTML Text Formatting</h1>
+        <p>HTML text formatting refers to the use of specific HTML tags to modify the appearance and structure of text on a webpage. It allows you to style text in different ways, such as making it <strong>bold</strong>, <em>italic</em>, <u>underlined</u>, <mark>highlighted</mark>, or <del>struck-through</del>.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction</a></li>
+            <li class="translateX"><a href="#categories">2. Formatting Categories</a></li>
+            <li class="translateX"><a href="#logical">3. Logical Tags</a></li>
+            <li class="translateX"><a href="#physical">4. Physical Tags</a></li>
+            <li class="translateX"><a href="#examples">5. Examples</a></li>
+            <li class="translateX"><a href="#comparison">6. Logical vs Physical Tags</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                <p class="autoShow">HTML formatting tags are used to style textual content and provide semantic meaning, affecting both the appearance and accessibility of web pages.</p>
+            </section>
+
+            <!-- 2. Categories -->
+            <section class="topics flex">
+                <h2 id="categories" class="underline autoShow">2. Formatting Categories</h2>
+                <ul class="autoShow">
+                    <li>Logical Tags</li>
+                    <li>Physical Tags</li>
+                </ul>
+            </section>
+
+            <!-- 3. Logical Tags -->
+            <section class="topics flex">
+                <h2 id="logical" class="underline autoShow">3. Logical Tags</h2>
+                <p class="autoShow">Logical tags indicate semantic meaning or importance, without necessarily affecting the style:</p>
+                <ul class="autoShow">
+                    <li><code>&lt;strong&gt;</code> – Emphasizes strong importance (<strong>Strong Text</strong>)</li>
+                    <li><code>&lt;em&gt;</code> – Stresses emphasis (<em>Emphasized text</em>)</li>
+                    <li><code>&lt;mark&gt;</code> – Highlights background (<mark>Marked text</mark>)</li>
+                </ul>
+            </section>
+
+            <!-- 4. Physical Tags -->
+            <section class="topics flex">
+                <h2 id="physical" class="underline autoShow">4. Physical Tags</h2>
+                <p class="autoShow">Physical tags directly change the look of text for styling purposes:</p>
+                <ul class="autoShow">
+                    <li><code>&lt;b&gt;</code> – Bold (<b>Bold text</b>)</li>
+                    <li><code>&lt;i&gt;</code> – Italic (<i>Italic text</i>)</li>
+                    <li><code>&lt;u&gt;</code> – Underline (<u>Underlined text</u>)</li>
+                    <li><code>&lt;small&gt;</code> – Small size (<small>Small text</small>)</li>
+                    <li><code>&lt;sub&gt;</code> – Subscript (H<sub>2</sub>O)</li>
+                    <li><code>&lt;sup&gt;</code> – Superscript (E=mc<sup>2</sup>)</li>
+                    <li><code>&lt;del&gt;</code> – Deleted (<del>Deleted text</del>)</li>
+                    <li><code>&lt;ins&gt;</code> – Inserted (<ins>Inserted text</ins>)</li>
+                </ul>
+            </section>
+
+            <!-- 5. Examples -->
+            <section class="topics flex">
+                <h2 id="examples" class="underline autoShow">5. Examples</h2>
+                <p class="autoShow">
+                    <strong>Strong:</strong> <strong>This text is important</strong> <br>
+                    <em>Emphasized:</em> <em>This text is emphasized</em> <br>
+                    <b>Bold:</b> <b>This is bold</b> <br>
+                    <i>Italic:</i> <i>This is italic</i> <br>
+                    <mark>Marked:</mark> <mark>This is marked</mark> <br>
+                    <u>Underlined:</u> <u>This is underlined</u> <br>
+                </p>
+            </section>
+
+            <!-- 6. Logical vs Physical Comparison Table -->
+            <section class="topics flex">
+                <h2 id="comparison" class="underline autoShow">6. Logical vs. Physical Tags</h2>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto;">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Logical (Semantic)</th>
+                        <th>Physical (Styling)</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Yes</td>
+                        <td>Bold</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>No</td>
+                        <td>Bold</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Yes</td>
+                        <td>Italic</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;i&gt;</td>
+                        <td>No</td>
+                        <td>Italic</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;mark&gt;</td>
+                        <td>Yes</td>
+                        <td>Highlighted</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;u&gt;</td>
+                        <td>No</td>
+                        <td>Underlined</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;del&gt;</td>
+                        <td>Yes</td>
+                        <td>Strikethrough</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href=".chapter01.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter03.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

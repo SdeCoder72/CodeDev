@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="./chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+<div class="container">
+    <div class="heading topics">
+        <h1>Control Flow Statements in Programming</h1>
+        <p>
+            Control flow refers to the order in which statements within a program execute. Programs usually follow a sequential flow from top to bottom, but control flow statements allow more flexible execution, including loops, conditions, and jumps.
+        </p>
+        <p>
+            These statements are fundamental in programming—that’s how we repeat instructions, make decisions, and move to different parts of our code!
+        </p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction</a></li>
+            <li class="translateX"><a href="#types">2. Types of Control Flow</a></li>
+            <li class="translateX"><a href="#conditional">3. Conditional Statements</a></li>
+            <li class="translateX"><a href="#looping">4. Looping Statements</a></li>
+            <li class="translateX"><a href="#jump">5. Jump Statements</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                <p class="autoShow">
+                    <strong>Control flow statements</strong> let programmers manage the sequence and conditions in which portions of code run—making programs smart and adaptable!
+                </p>
+            </section>
+
+            <!-- 2. Types of Control Flow -->
+            <section class="topics flex">
+                <h2 id="types" class="underline autoShow">2. Types of Control Flow Statements</h2>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto;">
+                    <tr>
+                        <th>Type</th>
+                        <th>Statement</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Conditional</td>
+                        <td>if, if-else, switch-case</td>
+                        <td>Decides which code block to run based on a condition.</td>
+                    </tr>
+                    <tr>
+                        <td>Looping</td>
+                        <td>for, while, do-while</td>
+                        <td>Repeats a block of code several times.</td>
+                    </tr>
+                    <tr>
+                        <td>Jump</td>
+                        <td>break, continue, return, goto</td>
+                        <td>Alters standard execution by jumping to other parts of code.</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 3. Conditional Statements -->
+            <section class="topics flex">
+                <h2 id="conditional" class="underline autoShow">3. Conditional Statements</h2>
+                <ul class="autoShow">
+                    <li><strong>if:</strong> Runs code if a condition is true.</li>
+                    <li><strong>if-else:</strong> Runs one block if condition is true, otherwise another block.</li>
+                    <li><strong>if-else-if:</strong> Checks several conditions in order, runs matching block.</li>
+                    <li><strong>switch-case:</strong> Selects code block based on expression value.</li>
+                    <li><strong>Ternary Operator:</strong> Shortcut for simple conditions <code>condition ? trueValue : falseValue</code></li>
+                </ul>
+            </section>
+
+            <!-- 4. Looping Statements -->
+            <section class="topics flex">
+                <h2 id="looping" class="underline autoShow">4. Looping Statements</h2>
+                <ul class="autoShow">
+                    <li><strong>for loop:</strong> Runs a block for a set number of times or over a sequence.</li>
+                    <li><strong>while loop:</strong> Keeps running as long as a condition stays true.</li>
+                    <li><strong>do-while loop:</strong> Runs code at least once, then keeps going if condition stays true.</li>
+                    <li><strong>Nested loops:</strong> Loops inside loops for multi-level processing.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Jump Statements -->
+            <section class="topics flex">
+                <h2 id="jump" class="underline autoShow">5. Jump Statements</h2>
+                <ul class="autoShow">
+                    <li><strong>break:</strong> Exits a loop or switch early.</li>
+                    <li><strong>continue:</strong> Skips the remaining statements in the current loop iteration, continues with the next.</li>
+                    <li><strong>return:</strong> Exits a function and optionally returns a value.</li>
+                    <li><strong>goto:</strong> Jumps to a labeled statement in the code (generally discouraged).</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="./chapter04.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter06.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01">Learn HTML</a>
+                <a href="../CSS/chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

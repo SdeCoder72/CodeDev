@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>Responsive CSS</h1>
+        <p>Responsive CSS makes your website look good on all devices by automatically adjusting the layout, images, and content based on screen size, orientation, and resolution.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction</a></li>
+            <li class="translateX"><a href="#principles">2. Key Principles</a></li>
+            <li class="translateX"><a href="#mediaqueries">3. Media Queries</a></li>
+            <li class="translateX"><a href="#flexgrid">4. Flexbox & Grid</a></li>
+            <li class="translateX"><a href="#bestpractices">5. Best Practices</a></li>
+            <li class="translateX"><a href="#comparison">6. Responsive vs. Non-Responsive</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                <p class="autoShow">Responsive CSS means designing your web pages to automatically adjust for different screen sizes using layouts, flexible images, and CSS code so users always have an optimal viewing experience.</p>
+            </section>
+
+            <!-- 2. Key Principles -->
+            <section class="topics flex">
+                <h2 id="principles" class="underline autoShow">2. Key Principles</h2>
+                <ul class="autoShow">
+                    <li>Fluid Grids: Use relative units like % or fr for layouts</li>
+                    <li>Flexible Images: Images adapt to container width</li>
+                    <li>Media Queries: Apply different styles at different breakpoints</li>
+                    <li>Mobile-first: Start designing for smaller screens first</li>
+                </ul>
+            </section>
+
+            <!-- 3. Media Queries -->
+            <section class="topics flex">
+                <h2 id="mediaqueries" class="underline autoShow">3. Media Queries</h2>
+                <p class="autoShow">Media queries in CSS let you apply different style rules for different device characteristics (like width). Example:</p>
+                <pre class="autoShow">
+<code class="autoShow">@media (max-width: 600px) {
+  .container { padding: 10px; }
+}</code>
+                </pre>
+            </section>
+
+            <!-- 4. Flexbox & Grid -->
+            <section class="topics flex">
+                <h2 id="flexgrid" class="underline autoShow">4. Flexbox & Grid</h2>
+                <ul class="autoShow">
+                    <li><strong>Flexbox:</strong> One-dimensional layouts; easily center or space items</li>
+                    <li><strong>Grid:</strong> Two-dimensional systems; create complex layouts and grids</li>
+                </ul>
+                <pre class="autoShow">
+<code class="autoShow">.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 1 1 300px;
+}
+</code>
+                </pre>
+            </section>
+
+            <!-- 5. Best Practices -->
+            <section class="topics flex">
+                <h2 id="bestpractices" class="underline autoShow">5. Best Practices</h2>
+                <ul class="autoShow">
+                    <li>Always include <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+                    <li>Test with real devices and browser tools</li>
+                    <li>Use relative units (em, rem, %, fr) instead of px</li>
+                    <li>Optimize touch targets and readable font sizes</li>
+                </ul>
+            </section>
+
+            <!-- 6. Responsive vs. Non-Responsive Table -->
+            <section class="topics flex">
+                <h2 id="comparison" class="underline autoShow">6. Responsive vs. Non-Responsive</h2>
+                <table class="autoShow" border="1" cellpadding="5">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Responsive CSS</th>
+                        <th>Non-Responsive CSS</th>
+                    </tr>
+                    <tr>
+                        <td>Layout</td>
+                        <td>Flexible, adapts to all screens</td>
+                        <td>Fixed, looks bad on small screens</td>
+                    </tr>
+                    <tr>
+                        <td>Images</td>
+                        <td>Resize fluidly</td>
+                        <td>May overflow or look distorted</td>
+                    </tr>
+                    <tr>
+                        <td>Maintainability</td>
+                        <td>Easier for all devices</td>
+                        <td>Requires separate sites or hacks</td>
+                    </tr>
+                    <tr>
+                        <td>User Experience</td>
+                        <td>Consistent and user-friendly</td>
+                        <td>Frustrating on non-targeted screens</td>
+                    </tr>
+                    <tr>
+                        <td>SEO Benefit</td>
+                        <td>Higher, Google prefers responsive</td>
+                        <td>Lower, penalized for poor mobile experience</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="./chapter03.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter05.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

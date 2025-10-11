@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="./chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <!-- -----------main--------- -->
+
+    <div class="container">
+        <div class="heading topics">
+            <h1>Computer Hardware</h1>
+            <p>Computer hardware refers to the physical components of a computer that you can see and touch. These components work together to process input and deliver output based on user instructions.</p>
+        </div>
+
+        <nav class="navigation">
+            <h2>Table Of Contents</h2>
+            <ul>
+                <li class="translateX"><a href="#intro">1. Introduction</a></li>
+                <li class="translateX"><a href="#categories">2. Hardware Categories</a></li>
+                <li class="translateX"><a href="#input">3. Input Devices</a></li>
+                <li class="translateX"><a href="#output">4. Output Devices</a></li>
+                <li class="translateX"><a href="#storage">5. Storage Devices</a></li>
+                <li class="translateX"><a href="#components">6. Hardware Components</a></li>
+                <li class="translateX"><a href="#comparison">7. Hardware vs. Software</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="topic-container">
+                <!-- 1. Introduction -->
+                <section class="topics flex">
+                    <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                    <p class="autoShow">Computer hardware encompasses all **physical devices** of a computer system. These work together to process data and execute instructions from users.</p>
+                </section>
+
+                <!-- 2. Categories -->
+                <section class="topics flex">
+                    <h2 id="categories" class="underline autoShow">2. Hardware Categories</h2>
+                    <ul class="autoShow">
+                        <li>Input Devices</li>
+                        <li>Output Devices</li>
+                        <li>Storage Devices</li>
+                        <li>Internal Components</li>
+                    </ul>
+                </section>
+
+                <!-- 3. Input Devices -->
+                <section class="topics flex">
+                    <h2 id="input" class="underline autoShow">3. Input Devices</h2>
+                    <p class="autoShow">Devices allowing users to send commands or data to the computer. Popular examples include:</p>
+                    <ul class="autoShow">
+                        <li>Keyboard <span>(Alphabet, number, function keys, often wireless)</span></li>
+                        <li>Mouse <span>(Pointer/cursor control, click, drag)</span></li>
+                        <li>Scanner <span>(Digitizes documents/images)</span></li>
+                        <li>Trackball <span>(Stationary pointer control)</span></li>
+                        <li>Light Pen <span>(Draw/select on CRT screens)</span></li>
+                        <li>Microphone <span>(Audio input/voice commands)</span></li>
+                        <li>OCR & Bar Code Reader <span>(Text/Code data input)</span></li>
+                    </ul>
+                </section>
+
+                <!-- 4. Output Devices -->
+                <section class="topics flex">
+                    <h2 id="output" class="underline autoShow">4. Output Devices</h2>
+                    <p class="autoShow">Devices that display or produce output for the user:</p>
+                    <ul class="autoShow">
+                        <li>Monitor <span>(Visual display)</span></li>
+                        <li>Printer <span>(Text & images on paper)</span></li>
+                        <li>Plotter <span>(Large blueprints and graphics)</span></li>
+                        <li>Speakers <span>(Sound output)</span></li>
+                    </ul>
+                </section>
+
+                <!-- 5. Storage Devices -->
+                <section class="topics flex">
+                    <h2 id="storage" class="underline autoShow">5. Storage Devices</h2>
+                    <p class="autoShow">Devices for storing data permanently or temporarily:</p>
+                    <ul class="autoShow">
+                        <li>CDs <span>(Rom, Recordable, Rewritable; up to 700MB)</span></li>
+                        <li>DVDs <span>(ROM, R/RW; from 4.7GB to 17GB)</span></li>
+                        <li>Hard Disk <span>(Internal/External, GB to PB capacity)</span></li>
+                    </ul>
+                    <p class="autoShow">Also see: RAM (temporary memory), ROM (read-only memory)</p>
+                </section>
+
+                <!-- 6. Internal Hardware Components -->
+                <section class="topics flex">
+                    <h2 id="components" class="underline autoShow">6. Hardware Components</h2>
+                    <ul class="autoShow">
+                        <li><strong>CPU (Central Processing Unit):</strong> Control, ALU, Memory units</li>
+                        <li><strong>Motherboard:</strong> Main circuit board connecting everything</li>
+                        <li><strong>RAM:</strong> Temporary, volatile memory (SRAM, DRAM)</li>
+                        <li><strong>VGA Port:</strong> Video display connection</li>
+                        <li><strong>Power Supply:</strong> Powers all components</li>
+                        <li><strong>Cooling Fan:</strong> Prevents system overheating</li>
+                        <li><strong>Hard Drive:</strong> Permanent storage for files/programs</li>
+                    </ul>
+                </section>
+                
+                <!-- 7. Hardware vs. Software Table -->
+                <section class="topics flex">
+                    <h2 id="comparison" class="underline autoShow">7. Hardware vs. Software</h2>
+                    <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto; font-size: 1.2rem;">
+                        <tr>
+                            <th>Category</th>
+                            <th>Hardware</th>
+                            <th>Software</th>
+                        </tr>
+                        <tr>
+                            <td>Definition</td>
+                            <td>Physical devices</td>
+                            <td>Programs/applications</td>
+                        </tr>
+                        <tr>
+                            <td>Examples</td>
+                            <td>CPU, RAM, Monitor, Keyboard</td>
+                            <td>Operating System, Browser, Video Editor</td>
+                        </tr>
+                        <tr>
+                            <td>Purpose</td>
+                            <td>Executes & stores physically</td>
+                            <td>Processes data, user interface</td>
+                        </tr>
+                        <tr>
+                            <td>Dependence</td>
+                            <td>Independent, but needs software</td>
+                            <td>Needs hardware to work</td>
+                        </tr>
+                        <tr>
+                            <td>Interaction</td>
+                            <td>Direct (user/system)</td>
+                            <td>Indirect (uses hardware)</td>
+                        </tr>
+                        <tr>
+                            <td>Upgradability</td>
+                            <td>Add/replace physical parts</td>
+                            <td>Update/patch/new version</td>
+                        </tr>
+                        <tr>
+                            <td>Cost</td>
+                            <td>Higher initial cost</td>
+                            <td>Lower initial (generally)</td>
+                        </tr>
+                        <tr>
+                            <td>Installation</td>
+                            <td>Physical setup required</td>
+                            <td>Installed via software packages</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+
+        <div class="btn-div">
+            <a href="./chapter01.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+            <a href="./chapter03.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01">Learn HTML</a>
+                <a href="../CSS/chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

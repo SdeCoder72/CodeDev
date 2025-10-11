@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="./chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <!-- ----main----- -->
+
+    <div class="container">
+    <div class="heading topics">
+      <h1>File Systems in Operating System</h1>
+      <p>File systems are the backbone of data storage, organizing information and making it easily retrievable for users and applications.</p>
+    </div>
+
+    <nav class="navigation">
+      <h2>Table Of Contents</h2>
+      <ul class="content-table">
+        <li class="translateX"><a href="#01">1. What is a File System?</a></li>
+        <li class="translateX"><a href="#02">2. Functions of File System</a></li>
+        <li class="translateX"><a href="#03">3. Types of File Systems</a></li>
+        <li class="translateX"><a href="#04">4. Directory Structures</a></li>
+        <li class="translateX"><a href="#05">5. File Allocation Methods</a></li>
+        <li class="translateX"><a href="#06">6. Features & Limitations</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="topic-container">
+
+        <!-- --------What is a File System? -->
+        <section class="topics flex">
+          <h2 id="01" class="underline autoShow">1. What is a File System?</h2>
+          <p class="autoShow">A file system is the method and data structure that an operating system uses to control how data is stored and retrieved. Without a file system, data would be essentially a large block of raw information with no way to tell where one piece stops and another begins.</p>
+          <h3 class="underline autoShow">Example File Systems:</h3>
+          <ul class="autoShow">
+            <li>NTFS, FAT32 (Windows)</li>
+            <li>EXT4 (Linux)</li>
+            <li>HFS+ (macOS)</li>
+          </ul>
+        </section>
+
+        <!-- ----------Functions of File System -->
+        <section class="topics flex">
+          <h2 id="02" class="underline autoShow">2. Functions of File System</h2>
+          <ul class="autoShow">
+            <li>Organizes files and directories.</li>
+            <li>Manages file access, permissions, and security.</li>
+            <li>Handles space allocation and free space management.</li>
+            <li>Supports file creation, deletion, modification, and backup.</li>
+          </ul>
+        </section>
+
+        <!-- -----Types of File Systems -->
+        <section class="topics flex">
+          <h2 id="03" class="underline autoShow">3. Types of File Systems</h2>
+          <p class="autoShow">Various file systems exist, each with unique features and limitations.</p>
+          <ul class="autoShow">
+            <li>Single-Level Directory</li>
+            <li>Two-Level Directory</li>
+            <li>Tree-Structured Directory</li>
+            <li>Acyclic Graph Directory</li>
+            <li>General Graph Directory</li>
+          </ul>
+        </section>
+
+        <!-- ----- Directory Structures------- -->
+        <section class="topics flex">
+          <h2 id="04" class="underline autoShow">4. Directory Structures</h2>
+          <p class="autoShow">Directory structures determine how files are organized and navigated:</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200803172645/DirectoryStructure.png" alt="Directory Structure example" class="topic-img">
+          <ul class="autoShow">
+            <li>Single-Level: All files in one directory.</li>
+            <li>Hierarchical: Files grouped in subdirectories.</li>
+            <li>Graph: Allows links between files/directories.</li>
+          </ul>
+        </section>
+        <!-- ----allocation--- -->
+        <section class="topics flex">
+          <h2 id="05" class="underline autoShow">5. File Allocation Methods</h2>
+          <p class="autoShow">Three primary ways files are stored on disk:</p>
+          <ul class="autoShow">
+            <li><strong>Contiguous Allocation:</strong> Files occupy a set of contiguous disk blocks.</li>
+            <li><strong>Linked Allocation:</strong> Each file block points to the next.</li>
+            <li><strong>Indexed Allocation:</strong> Index block contains pointers to all file blocks.</li>
+          </ul>
+          <h3 class="underline autoShow">Example Diagram:</h3>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200702165446/ContiguousAllocation.png" alt="Contiguous allocation example" class="topic-img">
+        </section>
+
+        <!-- --Features & Limitations ------>
+        <section class="topics flex">
+          <h2 id="06" class="underline autoShow">6. Features & Limitations</h2>
+          <h3 class="underline autoShow">Features:</h3>
+          <ul class="autoShow">
+            <li>Efficient file management</li>
+            <li>Security and data integrity</li>
+            <li>Support for different data types (text, binary, images, etc.)</li>
+          </ul>
+          <h3 class="underline autoShow">Limitations:</h3>
+          <ul class="autoShow">
+            <li>Fragmentation issues (depends on allocation method)</li>
+            <li>Space inefficiency for small files</li>
+            <li>Complex recovery in case of failure</li>
+          </ul>
+        </section>
+
+      </div>
+    </main>
+    <div class="btn-div">
+      <a href="./chapter02.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+      <a href="./chapter04.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+  </div>
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01">Learn HTML</a>
+                <a href="../CSS/chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

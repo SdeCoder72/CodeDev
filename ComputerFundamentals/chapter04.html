@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="./chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+<div class="container">
+    <!-- Heading Section -->
+    <div class="heading topics">
+        <h1>Algorithms & Problem Solving</h1>
+        <p>Every step in an algorithm shapes raw logic into solutions, making technology smarter and life easier.</p>
+    </div>
+
+    <!-- Table Of Contents Navigation -->
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#01">1. Introduction to Algorithms</a></li>
+            <li class="translateX"><a href="#02">2. Characteristics of Algorithms</a></li>
+            <li class="translateX"><a href="#03">3. Properties of Algorithms</a></li>
+            <li class="translateX"><a href="#04">4. Advantages & Disadvantages</a></li>
+            <li class="translateX"><a href="#05">5. How to Design an Algorithm?</a></li>
+            <li class="translateX"><a href="#06">6. Algorithm Examples</a></li>
+            <li class="translateX"><a href="#07">7. Algorithm Analysis</a></li>
+            <li class="translateX"><a href="#08">8. Algorithm Complexity</a></li>
+            <li class="translateX"><a href="#09">9. Expressions of Algorithms</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- Introduction Section -->
+            <section class="topics flex">
+                <h2 id="01" class="underline autoShow">1. Introduction to Algorithms</h2>
+                <p class="autoShow">An algorithm is a finite sequence of well-defined instructions to solve a particular problem or perform a computation.</p>
+            </section>
+
+            <!-- Characteristics of Algorithms -->
+            <section class="topics flex">
+                <h2 id="02" class="underline autoShow">2. Characteristics of Algorithms</h2>
+                <ul class="autoShow">
+                    <li>Clear and unambiguous steps.</li>
+                    <li>Well-defined inputs and outputs.</li>
+                    <li>Finiteness—must terminate.</li>
+                    <li>Feasibility—practical operations.</li>
+                    <li>Language independence.</li>
+                </ul>
+            </section>
+            
+            <!-- Properties Section -->
+            <section class="topics flex">
+                <h2 id="03" class="underline autoShow">3. Properties of Algorithms</h2>
+                <ul class="autoShow">
+                    <li>Produces at least one output.</li>
+                    <li>Takes zero or more inputs.</li>
+                    <li>Deterministic (same output for same input).</li>
+                    <li>Effectiveness in each step.</li>
+                </ul>
+            </section>
+
+            <!-- Advantages & Disadvantages -->
+            <section class="topics flex">
+                <h2 id="04" class="underline autoShow">4. Advantages & Disadvantages</h2>
+                <h3 class="autoShow">Advantages:</h3>
+                <ul class="autoShow">
+                    <li>Easy to understand and implement.</li>
+                    <li>Step-wise problem breakdown.</li>
+                </ul>
+                <h3 class="autoShow">Disadvantages:</h3>
+                <ul class="autoShow">
+                    <li>Time-consuming to write for complex problems.</li>
+                    <li>Difficult to express branching/looping.</li>
+                </ul>
+            </section>
+
+            <!-- How to Design Section -->
+            <section class="topics flex">
+                <h2 id="05" class="underline autoShow">5. How to Design an Algorithm?</h2>
+                <ul class="autoShow">
+                    <li>Define the problem clearly.</li>
+                    <li>List all constraints.</li>
+                    <li>Analyze input/output requirements.</li>
+                    <li>Devise solution steps.</li>
+                </ul>
+            </section>
+
+            <!-- Example Algorithm -->
+            <section class="topics flex">
+                <h2 id="06" class="underline autoShow">6. Algorithm Example</h2>
+                <h3 class="autoShow">Sum of Three Numbers Algorithm:</h3>
+                <ol class="autoShow">
+                    <li>START</li>
+                    <li>Declare variables num1, num2, num3.</li>
+                    <li>Input values to the variables.</li>
+                    <li>Calculate sum = num1 + num2 + num3.</li>
+                    <li>Print sum.</li>
+                    <li>END</li>
+                </ol>
+            </section>
+
+            <!-- Algorithm Analysis -->
+            <section class="topics flex">
+                <h2 id="07" class="underline autoShow">7. Algorithm Analysis</h2>
+                <ul class="autoShow">
+                    <li><b>Priori Analysis:</b> Before implementation, theoretical efficiency estimation.</li>
+                    <li><b>Posterior Analysis:</b> After implementation, actual efficiency measurement.</li>
+                </ul>
+            </section>
+
+            <!-- Algorithm Complexity Section -->
+            <section class="topics flex">
+                <h2 id="08" class="underline autoShow">8. Algorithm Complexity</h2>
+                <h3 class="autoShow">Space Complexity:</h3>
+                <p>Amount of memory required by an algorithm.</p>
+                <h3 class="autoShow">Time Complexity:</h3>
+                <p>Amount of time required by an algorithm.</p>
+            </section>
+
+            <!-- Algorithm Expressions -->
+            <section class="topics flex">
+                <h2 id="09" class="underline autoShow">9. Expressions of Algorithms</h2>
+                <ul class="autoShow">
+                    <li>Natural Language</li>
+                    <li>Flowchart</li>
+                    <li>Pseudocode</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <div class="btn-div">
+        <a href="./chapter03.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter05.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01">Learn HTML</a>
+                <a href="../CSS/chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

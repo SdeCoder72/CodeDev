@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>Semantic HTML & Multimedia in HTML</h1>
+        <p>Semantic HTML uses meaningful tags to represent content structure, while multimedia tags allow embedding audio, video, and images directly in a webpage.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#semantic-html">1. Semantic HTML</a></li>
+            <li class="translateX"><a href="#multimedia-html">2. Multimedia in HTML</a></li>
+            <li class="translateX"><a href="#semantic-elements">3. Key Semantic Elements</a></li>
+            <li class="translateX"><a href="#multimedia-elements">4. Key Multimedia Elements</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+
+            <!-- 1. Semantic HTML -->
+            <section class="topics flex">
+                <h2 id="semantic-html" class="underline autoShow">1. Semantic HTML</h2>
+                <p class="autoShow">
+                    Semantic HTML clearly defines the meaning of elements on a webpage, improving accessibility, SEO, and maintainability.
+                </p>
+                <p class="autoShow">For example, tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> express the structure and content purpose.</p>
+            </section>
+
+            <!-- 2. Multimedia in HTML -->
+            <section class="topics flex">
+                <h2 id="multimedia-html" class="underline autoShow">2. Multimedia in HTML</h2>
+                <p class="autoShow">
+                    Multimedia in HTML refers to embedding images, audio, and video files directly inside HTML using special tags without the need for plugins.
+                </p>
+                <p class="autoShow">
+                    This enhances web experiences with native controls for playback and customization.
+                </p>
+            </section>
+
+            <!-- 3. Key Semantic Elements -->
+            <section class="topics flex">
+                <h2 id="semantic-elements" class="underline autoShow">3. Key Semantic Elements</h2>
+                <ul class="autoShow">
+                    <li><strong>&lt;header&gt;</strong>: Introductory content or navigation.</li>
+                    <li><strong>&lt;nav&gt;</strong>: Navigation links.</li>
+                    <li><strong>&lt;main&gt;</strong>: Main content of the document (only one per page).</li>
+                    <li><strong>&lt;section&gt;</strong>: Thematic grouping of content.</li>
+                    <li><strong>&lt;article&gt;</strong>: Independent, self-contained content.</li>
+                    <li><strong>&lt;footer&gt;</strong>: Footer of a document or section.</li>
+                </ul>
+            </section>
+
+            <!-- 4. Key Multimedia Elements -->
+            <section class="topics flex">
+                <h2 id="multimedia-elements" class="underline autoShow">4. Key Multimedia Elements</h2>
+                <figure class="autoShow">
+                    <img src="https://th.bing.com/th/id/OIP.2PV99eYqHuspw4x27SGtAAHaEK?w=302&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="coding-img">
+                    <figcaption>Example of an image element using &lt;img&gt;.</figcaption>
+                </figure>
+                <audio controls class="autoShow">
+                    <source src="../images/please-calm-my-mind-.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="autoShow">The <code>&lt;audio&gt;</code> element embeds audio with built-in controls.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c?si=af6UjCtNCzeMkFQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="autoShow">The <code>&lt;video&gt;</code> element embeds video content with playback controls.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href=".chapter04.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter06.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

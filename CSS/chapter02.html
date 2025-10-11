@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>CSS Box Model</h1>
+        <p>
+            The CSS Box Model describes how HTML elements are rendered as rectangular boxes consisting of content, padding, border, and margin. Understanding the box model is crucial for precise layout and spacing in web development.
+        </p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction</a></li>
+            <li class="translateX"><a href="#components">2. Components</a></li>
+            <li class="translateX"><a href="#calculations">3. Box Model Calculations</a></li>
+            <li class="translateX"><a href="#examples">4. HTML Example</a></li>
+            <li class="translateX"><a href="#comparison">5. Content-box vs Border-box</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                <p class="autoShow">
+                    Every element in HTML is visualized as a box, which includes the content itself, and surrounding layers for padding, border, and margin.
+                </p>
+            </section>
+
+            <!-- 2. Components -->
+            <section class="topics flex">
+                <h2 id="components" class="underline autoShow">2. Components</h2>
+                <ul class="autoShow">
+                    <li><strong>Content:</strong> The area that displays text, images, or other media.</li>
+                    <li><strong>Padding:</strong> Transparent space between content and border.</li>
+                    <li><strong>Border:</strong> Surrounds content and padding, giving visual edge.</li>
+                    <li><strong>Margin:</strong> Space outside the border, separates elements.</li>
+                </ul>
+            </section>
+
+            <!-- 3. Box Model Calculations -->
+            <section class="topics flex">
+                <h2 id="calculations" class="underline autoShow">3. Box Model Calculations</h2>
+                <p class="autoShow">
+                    For <strong>box-sizing: content-box</strong>: Total width = content width + padding + border. For <strong>box-sizing: border-box</strong>, total width is exactly the set width, including padding and border.
+                </p>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto; padding-bottom:1rem; font-size:1.2rem;">
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Actual text or images inside the box</td>
+                    </tr>
+                    <tr>
+                        <td>Padding</td>
+                        <td>Space between content and border</td>
+                    </tr>
+                    <tr>
+                        <td>Border</td>
+                        <td>Line surrounding the padding and content</td>
+                    </tr>
+                    <tr>
+                        <td>Margin</td>
+                        <td>Space outside the border</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 4. HTML Example -->
+            <section class="topics flex">
+                <h2 id="examples" class="underline autoShow">4. HTML Example</h2>
+                <pre class="autoShow">
+&lt;div class="box-model-example"&gt;
+  This div demonstrates the CSS Box Model.
+&lt;/div&gt;
+
+&lt;style&gt;
+.box-model-example {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #2196f3;
+  margin: 25px;
+  background-color: #e3f2fd;
+  box-sizing: border-box; /* Try 'content-box' for difference! */
+}
+&lt;/style&gt;
+                </pre>
+            </section>
+
+            <!-- 5. Content-box vs Border-box -->
+            <section class="topics flex">
+                <h2 id="comparison" class="underline autoShow">5. Content-box vs Border-box</h2>
+                <table class="autoShow" border="1" cellpadding="5">
+                    <tr>
+                        <th>box-sizing</th>
+                        <th>Behavior</th>
+                        <th>Usage</th>
+                    </tr>
+                    <tr>
+                        <td>content-box (default)</td>
+                        <td>Width/Height apply only to content area.</td>
+                        <td>Classic model; dimensions increase with border/padding.</td>
+                    </tr>
+                    <tr>
+                        <td>border-box</td>
+                        <td>Width/Height include content, padding, border.</td>
+                        <td>Consistent sizing; preferred for layouts.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="./chapter01.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter03.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

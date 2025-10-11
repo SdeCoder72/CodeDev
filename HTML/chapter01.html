@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="heading topics">
+            <h1>HTML Basics & Structure</h1>
+            <p>HTML (HyperText Markup Language) provides the foundation of all web pages. It defines the structure,
+                layout, and elements on any website.</p>
+        </div>
+
+        <nav class="navigation">
+            <h2>Table Of Contents</h2>
+            <ul>
+                <li class="translateX"><a href="#intro">1. What is HTML?</a></li>
+                <li class="translateX"><a href="#structure">2. HTML Document Structure</a></li>
+                <li class="translateX"><a href="#tags">3. Common HTML Tags</a></li>
+                <li class="translateX"><a href="#example">4. Sample HTML Code</a></li>
+                <li class="translateX"><a href="#table">5. Structure Table</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="topic-container">
+
+                <!-- 1. Introduction -->
+                <section class="topics flex">
+                    <h2 id="intro" class="underline autoShow">1. What is HTML?</h2>
+                    <p class="autoShow">HTML is a markup language that structures web content with tags, making text,
+                        images, links, and other elements readable by browsers.</p>
+                </section>
+
+                <!-- 2. Structure -->
+                <section class="topics flex">
+                    <h2 id="structure" class="underline autoShow">2. HTML Document Structure</h2>
+                    <ul class="autoShow">
+                        <li><strong>&lt;!DOCTYPE html&gt;:</strong> Declares the HTML version.</li>
+                        <li><strong>&lt;html&gt;:</strong> Wraps the whole document.</li>
+                        <li><strong>&lt;head&gt;:</strong> Holds meta info, styles, page title, links.</li>
+                        <li><strong>&lt;body&gt;:</strong> Contains all visible page content.</li>
+                    </ul>
+                </section>
+
+                <!-- 3. Tags -->
+                <section class="topics flex">
+                    <h2 id="tags" class="underline autoShow">3. Common HTML Tags</h2>
+                    <ul class="autoShow">
+                        <li>&lt;h1&gt; to &lt;h6&gt;: Headings</li>
+                        <li>&lt;p&gt;: Paragraphs</li>
+                        <li>&lt;a&gt;: Links</li>
+                        <li>&lt;img&gt;: Images</li>
+                        <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Lists</li>
+                    </ul>
+                </section>
+
+                <!-- 4. Example -->
+                <section class="topics flex">
+                    <h2 id="example" class="underline autoShow">4. Sample HTML Code</h2>
+                    <pre class="autoShow" style="font-size:1.3rem ; padding:1rem;"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML learning.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+                </section>
+
+                <!-- 5. Table summary -->
+                <section class="topics flex">
+                    <h2 id="table" class="underline autoShow">5. Structure Table</h2>
+                    <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto;">
+                        <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                            <th>Visible?</th>
+                        </tr>
+                        <tr>
+                            <td>&lt;!DOCTYPE html&gt;</td>
+                            <td>Declares HTML version</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;html&gt;</td>
+                            <td>Root element</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>Meta info, links, title</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;title&gt;</td>
+                            <td>Page title (tab name)</td>
+                            <td>Tab</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;body&gt;</td>
+                            <td>Main content</td>
+                            <td>Yes</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+
+        <div class="btn-div">
+        <a href="../ComputerFundamentals/chapter06.html" style="text-decoration: none;"><button class="redirect-btn"> ←
+                Previous</button></a>
+        <a href="./chapter02.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter"
+                        style="color: white;"></i></a>
+                <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

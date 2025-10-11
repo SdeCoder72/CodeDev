@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>Tables and Forms in HTML</h1>
+        <p>Tables display data in structured rows and columns, while forms collect user input for further processing. Both are essential for organizing content and interaction on a webpage.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#tables-intro">1. Tables Introduction</a></li>
+            <li class="translateX"><a href="#table-structure">2. Table Structure</a></li>
+            <li class="translateX"><a href="#sample-table">3. Sample Table</a></li>
+            <li class="translateX"><a href="#forms-intro">4. Forms Introduction</a></li>
+            <li class="translateX"><a href="#form-elements">5. Form Elements</a></li>
+            <li class="translateX"><a href="#sample-form">6. Sample Form</a></li>
+            <li class="translateX"><a href="#table-vs-form">7. Table vs. Form (Comparison)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Tables Introduction -->
+            <section class="topics flex">
+                <h2 id="tables-intro" class="underline autoShow">1. Tables Introduction</h2>
+                <p class="autoShow">A table in HTML organizes data into rows and columns, making viewing and comparison easy. They use the <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> tags to define structure.</p>
+            </section>
+
+            <!-- 2. Table Structure -->
+            <section class="topics flex">
+                <h2 id="table-structure" class="underline autoShow">2. Table Structure</h2>
+                <ul class="autoShow">
+                    <li><strong>&lt;table&gt;</strong>: The main container for table rows and columns.</li>
+                    <li><strong>&lt;tr&gt;</strong>: Defines a row in the table.</li>
+                    <li><strong>&lt;th&gt;</strong>: Marks a header cell (bold & centered by default).</li>
+                    <li><strong>&lt;td&gt;</strong>: Represents a standard cell for data.</li>
+                </ul>
+            </section>
+
+            <!-- 3. Sample Table -->
+            <section class="topics flex">
+                <h2 id="sample-table" class="underline autoShow">3. Sample Table</h2>
+                <p class="autoShow">This table shows student details using HTML.</p>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto; font-size:1.2rem;">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Priya</td>
+                        <td>Sharma</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Arun</td>
+                        <td>Singh</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Sam</td>
+                        <td>Watson</td>
+                        <td>41</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 4. Forms Introduction -->
+            <section class="topics flex">
+                <h2 id="forms-intro" class="underline autoShow">4. Forms Introduction</h2>
+                <p class="autoShow">Forms allow users to provide input to a website. HTML forms use various tags like <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;label&gt;</code> to collect and process data.</p>
+            </section>
+
+            <!-- 5. Form Elements -->
+            <section class="topics flex">
+                <h2 id="form-elements" class="underline autoShow">5. Form Elements</h2>
+                <ul class="autoShow">
+                    <li><strong>&lt;form&gt;</strong>: Wraps the entire form.</li>
+                    <li><strong>&lt;label&gt;</strong>: Provides a text label for inputs.</li>
+                    <li><strong>&lt;input&gt;</strong>: Various types like text, email, password, etc.</li>
+                    <li><strong>&lt;textarea&gt;</strong>: Large text input area.</li>
+                    <li><strong>&lt;select&gt;</strong>: Dropdown selector.</li>
+                    <li><strong>&lt;button&gt;</strong>: Used for submission or action.</li>
+                </ul>
+            </section>
+
+            <!-- 6. Sample Form -->
+            <section class="topics flex">
+                <h2 id="sample-form" class="underline autoShow">6. Sample Form</h2>
+                <form class="autoShow" action="/submit" method="post" style="width:90%;margin:auto; font-size:1.2rem;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="25"></textarea><br><br>
+                    <button type="submit" class="redirect-btn">Submit</button>
+                </form>
+            </section>
+
+            <!-- 7. Table vs. Form Comparison -->
+            <section class="topics flex">
+                <h2 id="table-vs-form" class="underline autoShow">7. Table vs. Form (Comparison)</h2>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto; font-size:1.2rem;">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Table</th>
+                        <th>Form</th>
+                    </tr>
+                    <tr>
+                        <td>Purpose</td>
+                        <td>Display structured data</td>
+                        <td>Collect user input</td>
+                    </tr>
+                    <tr>
+                        <td>Main Tags</td>
+                        <td><code>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</code></td>
+                        <td><code>&lt;form&gt;, &lt;input&gt;, &lt;label&gt;, &lt;button&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>User Interaction</td>
+                        <td>Read/View data</td>
+                        <td>Enter/Submit data</td>
+                    </tr>
+                    <tr>
+                        <td>Outputs</td>
+                        <td>Static rows & columns</td>
+                        <td>Data sent to server/script</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href=".chapter03.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter05.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

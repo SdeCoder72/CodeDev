@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>Advance CSS</h1>
+        <p>
+            CSS variables (custom properties) are a modern tool to manage, reuse, and dynamically update style values across your web project. With these, you can enable easy theming, simplify maintenance, and make style adjustments with minimal code changes.
+        </p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction to CSS Variables</a></li>
+            <li class="translateX"><a href="#syntax">2. Syntax & Usage</a></li>
+            <li class="translateX"><a href="#scope">3. Global vs. Local Scope</a></li>
+            <li class="translateX"><a href="#theming">4. Dynamic Theming</a></li>
+            <li class="translateX"><a href="#animation">5. Animation Control</a></li>
+            <li class="translateX"><a href="#bestpractices">6. Best Practices</a></li>
+            <li class="translateX"><a href="#comparison">7. Variables vs. Preprocessor</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction to CSS Variables</h2>
+                <p class="autoShow">
+                    CSS variables, called custom properties, use the <span style="font-family: monospace;">--property-name</span> syntax and are reusable throughout your stylesheet. They enable dynamic and scalable design systems easily handled in modern web projects.
+                </p>
+            </section>
+
+            <!-- 2. Syntax & Usage -->
+            <section class="topics flex">
+                <h2 id="syntax" class="underline autoShow">2. Syntax & Usage</h2>
+                <ul class="autoShow">
+                    <li><code>:root { --primary-color: #3498db; }</code> <span>(Global variable definition)</span></li>
+                    <li><code>.container { background: var(--primary-color); }</code> <span>(Using variable)</span></li>
+                    <li><code>var(--property, fallback)</code> <span>(Optional fallback for robustness)</span></li>
+                </ul>
+            </section>
+
+            <!-- 3. Global vs. Local Scope -->
+            <section class="topics flex">
+                <h2 id="scope" class="underline autoShow">3. Global vs. Local Scope</h2>
+                <p class="autoShow">Define variables globally with <code>:root</code> for entire project access, or locally in a class for component-specific customization.</p>
+                <ul class="autoShow">
+                    <li><code>:root { --border-radius: 8px; }</code> <span>(Global)</span></li>
+                    <li><code>.card { --border-color: #ddd; }</code> <span>(Local to .card)</span></li>
+                </ul>
+            </section>
+
+            <!-- 4. Dynamic Theming -->
+            <section class="topics flex">
+                <h2 id="theming" class="underline autoShow">4. Dynamic Theming</h2>
+                <p class="autoShow">
+                    Easily implement light or dark modes by overriding variables, reducing duplication. For example:
+                </p>
+                <ul class="autoShow">
+                    <li><code>:root { --bg: #fff; --text: #000; }</code> (Default theme)</li>
+                    <li><code>.dark-mode { --bg: #000; --text: #fff; }</code> (Dark theme override)</li>
+                    <li><code>body { background: var(--bg); color: var(--text); }</code> (Usage)</li>
+                </ul>
+            </section>
+
+            <!-- 5. Animation Control -->
+            <section class="topics flex">
+                <h2 id="animation" class="underline autoShow">5. Animation Control</h2>
+                <p class="autoShow">
+                    Centralize your animation timing:
+                </p>
+                <ul class="autoShow">
+                    <li><code>:root { --transition-speed: 0.3s; }</code></li>
+                    <li><code>.button { transition: background var(--transition-speed); }</code></li>
+                </ul>
+            </section>
+
+            <!-- 6. Best Practices -->
+            <section class="topics flex">
+                <h2 id="bestpractices" class="underline autoShow">6. Best Practices</h2>
+                <ul class="autoShow">
+                    <li>Define all global variables in <code>:root</code> for easy access.</li>
+                    <li>Use semantic names (e.g., <code>--btn-bg</code>).</li>
+                    <li>Override locally only when needed for components/themes.</li>
+                    <li>Keep variable structure flat, avoid deep inheritance unless necessary.</li>
+                </ul>
+            </section>
+
+            <!-- 7. Comparison Table -->
+            <section class="topics flex">
+                <h2 id="comparison" class="underline autoShow">7. CSS Variables vs. Preprocessor Variables</h2>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto;">
+                    <tr>
+                        <th>Property</th>
+                        <th>CSS Variables</th>
+                        <th>Sass/Less Variables</th>
+                    </tr>
+                    <tr>
+                        <td>Syntax</td>
+                        <td>--property-name</td>
+                        <td>$variable / @variable</td>
+                    </tr>
+                    <tr>
+                        <td>Scope</td>
+                        <td>DOM Cascade (dynamic)</td>
+                        <td>File-scope (static)</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Change</td>
+                        <td>Possible via JS, live update</td>
+                        <td>Requires recompile</td>
+                    </tr>
+                    <tr>
+                        <td>Inheritance</td>
+                        <td>Yes, via cascade</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Browser Support</td>
+                        <td>Modern browsers only</td>
+                        <td>Depends on tool</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="./chapter05.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <button class="redirect-btn" disabled style="cursor: not-allowed;">JavaScript Coming Soon → </button>
+    </div>
+</div>
+
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

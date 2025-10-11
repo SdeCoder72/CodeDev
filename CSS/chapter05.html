@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>CSS Animations</h1>
+        <p>CSS animations allow web developers to create smooth transitions and lively effects by gradually changing styles of elements using keyframes, all without JavaScript. Animations enhance interactivity and draw attention to important components on a page.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction</a></li>
+            <li class="translateX"><a href="#principles">2. CSS Animation Principles</a></li>
+            <li class="translateX"><a href="#properties">3. Animation Properties</a></li>
+            <li class="translateX"><a href="#examples">4. Practical Examples</a></li>
+            <li class="translateX"><a href="#comparison">5. CSS Transition vs Animation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                <p class="autoShow">CSS animations use <strong>@keyframes</strong> to define style changes and special <strong>animation properties</strong> to control timing, iteration, and effect. They are widely used for attention-grabbing effects and subtle UX improvements.</p>
+            </section>
+
+            <!-- 2. CSS Animation Principles -->
+            <section class="topics flex">
+                <h2 id="principles" class="underline autoShow">2. CSS Animation Principles</h2>
+                <ul class="autoShow">
+                    <li>Define <strong>@keyframes</strong> for animation steps</li>
+                    <li>Bind animation to element via CSS property</li>
+                    <li>Control timing, duration, direction, and repeats</li>
+                    <li>Animate multiple properties (color, transform, opacity)</li>
+                </ul>
+            </section>
+
+            <!-- 3. Animation Properties -->
+            <section class="topics flex">
+                <h2 id="properties" class="underline autoShow">3. Animation Properties</h2>
+                <ul class="autoShow">
+                    <li><strong>animation-name:</strong> Name of the keyframes rule</li>
+                    <li><strong>animation-duration:</strong> How long one animation cycle runs</li>
+                    <li><strong>animation-timing-function:</strong> Speed curve (ease, linear)</li>
+                    <li><strong>animation-delay:</strong> Wait time before animation starts</li>
+                    <li><strong>animation-iteration-count:</strong> How many times to loop</li>
+                    <li><strong>animation-direction:</strong> Play forward, reverse, alternate</li>
+                    <li><strong>animation-fill-mode:</strong> How element looks before/after animation</li>
+                </ul>
+            </section>
+
+            <!-- 4. Practical Examples -->
+            <section class="topics flex">
+                <h2 id="examples" class="underline autoShow">4. Practical Examples</h2>
+                <p class="autoShow">Below is a simple animation that stretches a button's width from 100px to 200px:</p>
+                <pre class="autoShow">
+&lt;div class="animated-btn"&gt;Click Me&lt;/div&gt;
+
+&lt;style&gt;
+@keyframes stretch {
+  0%   { width: 100px; }
+  100% { width: 200px; }
+}
+.animated-btn {
+  background: #4b81fa;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  animation: stretch 1s ease-in-out 0s 1 forwards;
+}
+&lt;/style&gt;
+                </pre>
+                <p class="autoShow">Other common uses: fade-in elements, slide navigation, bounce images, loading spinners.</p>
+            </section>
+
+            <!-- 5. CSS Transition vs Animation Table -->
+            <section class="topics flex">
+                <h2 id="comparison" class="underline autoShow">5. CSS Transition vs Animation</h2>
+                <table class="autoShow" border="1" cellpadding="5" style="width:90%;margin:auto; padding-bottom:1rem; font-size:1.2rem ;">
+                    <tr>
+                        <th>Feature</th>
+                        <th>CSS Transition</th>
+                        <th>CSS Animation</th>
+                    </tr>
+                    <tr>
+                        <td>Trigger</td>
+                        <td>User action (hover, click)</td>
+                        <td>Automatic, timeline based</td>
+                    </tr>
+                    <tr>
+                        <td>Steps</td>
+                        <td>From one state to another</td>
+                        <td>Multiple steps via keyframes</td>
+                    </tr>
+                    <tr>
+                        <td>Looping</td>
+                        <td>No looping</td>
+                        <td>Looping via iteration count</td>
+                    </tr>
+                    <tr>
+                        <td>Complexity</td>
+                        <td>Simple, limited</td>
+                        <td>Complex, versatile</td>
+                    </tr>
+                    <tr>
+                        <td>Properties</td>
+                        <td>transition-property, duration</td>
+                        <td>animation-name, duration, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Usage</td>
+                        <td>Button hover, link color fade</td>
+                        <td>Loader, banners, complex UI effects</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="./chapter04.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter06.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

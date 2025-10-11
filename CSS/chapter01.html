@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>CSS Fundamentals</h1>
+        <p style="font-size: 1.2rem; padding-bottom: 1rem;">CSS (Cascading Style Sheets) defines the look and feel of web pages by controlling layout, colors, fonts, and other visual elements. It separates content from presentation, making websites attractive and responsive.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. What is CSS?</a></li>
+            <li class="translateX"><a href="#syntax">2. Syntax & Structure</a></li>
+            <li class="translateX"><a href="#selectors">3. Selectors</a></li>
+            <li class="translateX"><a href="#boxmodel">4. Box Model</a></li>
+            <li class="translateX"><a href="#application">5. Applying CSS</a></li>
+            <li class="translateX"><a href="#table">6. CSS Properties Table</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. What is CSS? -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. What is CSS?</h2>
+                <p class="autoShow"  style="font-size: 1.2rem; padding-bottom: 1rem;">CSS stands for <strong>Cascading Style Sheets</strong> and is used to style web pages by applying designs to HTML elements. It controls elements' colors, spacing, layout, and responsive behavior.</p>
+            </section>
+
+            <!-- 2. Syntax & Structure -->
+            <section class="topics flex">
+                <h2 id="syntax" class="underline autoShow">2. Syntax & Structure</h2>
+                <p class="autoShow" style="font-size: 1.2rem; padding-bottom: 1rem;">A CSS rule consists of a selector and a declaration block:</p>
+                <p style="padding-bottom: 1rem;" class="autoShow"><code>selector { property: value; }</code></p>
+                <ul class="autoShow">
+                    <li><span>Selector</span>: Targets the HTML element (e.g., <code>h1</code>, <code>.class</code>, <code>#id</code>).</li>
+                    <li><span>Property</span>: The style attribute to change (e.g., <code>color</code>).</li>
+                    <li><span>Value</span>: The setting for the property (e.g., <code>blue</code>).</li>
+                </ul>
+            </section>
+
+            <!-- 3. Selectors -->
+            <section class="topics flex">
+                <h2 id="selectors" class="underline autoShow">3. Selectors</h2>
+                <ul class="autoShow">
+                    <li><strong>Element Selector:</strong> Targets by HTML tag name (e.g., <code>p</code>).</li>
+                    <li><strong>Class Selector:</strong> Targets by class (e.g., <code>.box</code>).</li>
+                    <li><strong>ID Selector:</strong> Targets by id (e.g., <code>#main</code>).</li>
+                    <li><strong>Group & Descendant:</strong> <code>div p</code> targets <code>p</code> inside <code>div</code>.</li>
+                </ul>
+            </section>
+
+            <!-- 4. Box Model -->
+            <section class="topics flex">
+                <h2 id="boxmodel" class="underline autoShow">4. Box Model</h2>
+                <p class="autoShow" style="font-size: 1.2rem; padding-bottom: 1rem;">Every element is modeled as a box with content, padding, border, and margin:
+                </p>
+                <ul class="autoShow">
+                    <li><strong>Content:</strong> The actual text or image.</li>
+                    <li><strong>Padding:</strong> Space around the content.</li>
+                    <li><strong>Border:</strong> Wraps the padding (and content).</li>
+                    <li><strong>Margin:</strong> Space outside the border.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Applying CSS -->
+            <section class="topics flex">
+                <h2 id="application" class="underline autoShow">5. Applying CSS</h2>
+                <ul class="autoShow">
+                    <li><span>Inline:</span> Use the <code>style</code> attribute directly on the HTML element.</li>
+                    <li><span>Internal:</span> Place CSS inside a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>.</li>
+                    <li><span>External:</span> Link a separate <code>.css</code> file with <code>&lt;link&gt;</code> in the <code>&lt;head&gt;</code>.</li>
+                </ul>
+            </section>
+
+            <!-- 6. CSS Properties Table -->
+            <section class="topics flex">
+                <h2 id="table" class="underline autoShow">6. CSS Properties Table</h2>
+                <table class="autoShow" border="1" cellpadding="4" style="width:92%;margin:auto; font-size: 1.2rem;">
+                    <tr>
+                        <th>Property</th>
+                        <th>Example Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>blue</td>
+                        <td>Text color</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>#f3f3f3</td>
+                        <td>Background fill color</td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>16px</td>
+                        <td>Outside space of element</td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>8px</td>
+                        <td>Space inside the border</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>1px solid #333</td>
+                        <td>Element border style</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>18px</td>
+                        <td>Text size</td>
+                    </tr>
+                    <tr>
+                        <td>display</td>
+                        <td>flex / block</td>
+                        <td>Layout type of element</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="../HTML/chapter06.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter02.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

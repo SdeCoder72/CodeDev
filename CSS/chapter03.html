@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../index.html"class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+             <label for="menu-toggle" class="hamburger">
+                <span></span>
+             </label>
+             <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="../ComputerFundamentals/chapter01.html" class="btn">Get Started</a>
+                </button>
+             </ul>
+             
+        </div>
+    </header>
+
+    <div class="container">
+    <div class="heading topics">
+        <h1>Styling In CSS</h1>
+        <p>Styling in CSS allows web developers to control the look and feel of HTML elements, including layout, colors, typography, and responsiveness—making web pages visually appealing and user-friendly.</p>
+    </div>
+
+    <nav class="navigation">
+        <h2>Table Of Contents</h2>
+        <ul>
+            <li class="translateX"><a href="#intro">1. Introduction</a></li>
+            <li class="translateX"><a href="#howto">2. Ways to Add CSS</a></li>
+            <li class="translateX"><a href="#properties">3. Common Properties</a></li>
+            <li class="translateX"><a href="#selectors">4. CSS Selectors</a></li>
+            <li class="translateX"><a href="#benefits">5. Benefits of CSS</a></li>
+            <li class="translateX"><a href="#example">6. Sample Code</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic-container">
+            <!-- 1. Introduction -->
+            <section class="topics flex">
+                <h2 id="intro" class="underline autoShow">1. Introduction</h2>
+                <p class="autoShow">CSS stands for <strong>Cascading Style Sheets</strong>. It separates content (HTML) from presentation, allowing centralized design control across multiple pages.</p>
+            </section>
+
+            <!-- 2. Ways to Add CSS -->
+            <section class="topics flex">
+                <h2 id="howto" class="underline autoShow">2. Ways to Add CSS</h2>
+                <ul class="autoShow">
+                    <li><strong>Inline:</strong> Styles written in the HTML element's <code>style</code> attribute.</li>
+                    <li><strong>Internal:</strong> Styles placed within a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>.</li>
+                    <li><strong>External:</strong> Styles in a separate <code>.css</code> file linked to HTML using <code>&lt;link&gt;</code>.</li>
+                </ul>
+            </section>
+
+            <!-- 3. Common Properties -->
+            <section class="topics flex">
+                <h2 id="properties" class="underline autoShow">3. Common Properties</h2>
+                <ul class="autoShow">
+                    <li><code>color</code>: Text color</li>
+                    <li><code>background-color</code>: Background color</li>
+                    <li><code>font-family</code>: Font type</li>
+                    <li><code>font-size</code>: Text size</li>
+                    <li><code>margin</code>: Space outside element</li>
+                    <li><code>padding</code>: Space inside element</li>
+                    <li><code>border</code>: Borders</li>
+                </ul>
+            </section>
+
+            <!-- 4. CSS Selectors -->
+            <section class="topics flex">
+                <h2 id="selectors" class="underline autoShow">4. CSS Selectors</h2>
+                <ul class="autoShow">
+                    <li><strong>Element Selector:</strong> Targets by tag (e.g., <code>p</code>, <code>h1</code>)</li>
+                    <li><strong>Class Selector:</strong> Targets by class (e.g., <code>.container</code>)</li>
+                    <li><strong>ID Selector:</strong> Targets by ID (e.g., <code>#heading</code>)</li>
+                </ul>
+            </section>
+
+            <!-- 5. Benefits of CSS -->
+            <section class="topics flex">
+                <h2 id="benefits" class="underline autoShow">5. Benefits of CSS</h2>
+                <ul class="autoShow">
+                    <li>Centralized control of design</li>
+                    <li>Consistent site-wide styling</li>
+                    <li>Easier updates and maintenance</li>
+                </ul>
+            </section>
+
+            <!-- 6. Sample Code -->
+            <section class="topics flex">
+                <h2 id="example" class="underline autoShow">6. Sample Code</h2>
+                <pre class="autoShow"><code>
+&lt;!-- HTML --&gt;
+&lt;h1 class="main-heading"&gt;Hello CSS!&lt;/h1&gt;
+
+&lt;!-- CSS (Internal or External) --&gt;
+.main-heading {
+    color: #4CAF50;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+                </code></pre>
+            </section>
+        </div>
+    </main>
+
+    <div class="btn-div">
+        <a href="./chapter02.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+        <a href="./chapter04.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+    </div>
+</div>
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01.html">Learn HTML</a>
+                <a href="./chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                    <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                            class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="#" class="contact-links">Terms of Service</a>
+                <a href="#" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

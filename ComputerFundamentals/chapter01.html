@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/CodeDevLogo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="../style2.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">
+                <img src="../images/cd-logo-white.png" alt="logo" class="logo-img">
+                <span>CodeDev</span>
+            </a>
+
+            <!-- Hamburger---- -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/chapter01.html">Courses</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <button class="nav-btn">
+                    <a href="./chapter01.html" class="btn">Get Started</a>
+                </button>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="heading topics">
+            <h1>Binary & Data Representation</h1>
+            <p>In the world of binary, every 0 class="translateX" and 1 is a stroke of logic painting the vast canvas of
+                data.</p>
+        </div>
+
+        <nav class="navigation">
+            <h2>Table Of Contents</h2>
+            <ul>
+                <li class="translateX"><a href="#01">1. Binary Representation of Unsigned Numbers</a></li>
+                <li class="translateX"><a href="#02">2. Binary Representation of Signed Numbers</a></li>
+                <li class="translateX"><a href="#03">3. Floating-Point Representation (IEEE 754)</a></li>
+                <li class="translateX"><a href="#04">4. Gray Code Binary Representation</a></a></li>
+                <li class="translateX"><a href="#05">5. Binary-Coded Decimal (BCD) Representation</a></li>
+                <li class="translateX"><a href="#06">6. Excess-3 Code Representation</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <div class="topic-container">
+                <!-- 1. Unsigned Binary Representation -->
+                <section class="topics flex">
+                    <h2 id="01" class="underline autoShow">1. Binary Representation of Unsigned Numbers</h2>
+                    <p class="autoShow">Unsigned binary representation is a way to represent positive numbers using only
+                        0s and 1s. All bits contribute to magnitude, with no sign bit.</p>
+                    <h3 class="underline autoShow">Features of Unsigned Representation:</h3>
+                    <ul class="autoShow">
+                        <li>Each bit represents a power of 2.</li>
+                        <li>Rightmost bit (LSB), leftmost bit (MSB).</li>
+                        <li>Value is sum of powers of 2 at each '1'.</li>
+                        <li>An n-bit unsigned binary: range 0 to 2ⁿ - 1.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Represents only positive values and zero.</li>
+                        <li>Limited by number of bits (e.g., 0-255 for 8 bits).</li>
+                        <li>Overflow errors beyond max value.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Example: 4-Bit Unsigned Binary</h3>
+                    <p></p>
+                </section>
+
+                <!-- 2. Signed Numbers & Subtypes -->
+                <section class="topics flex">
+                    <h2 id="#02" class="underline autoShow">2. Binary Representation of Signed Numbers</h2>
+                    <p class="autoShow">Allows representation of both positive and negative integers. Common methods:
+                    </p>
+                    <h3 id="sign-mag" class="underline autoShow">Sign-Magnitude</h3>
+                    <p>MSB is the sign (0=positive, 1=negative). Remaining bits for magnitude.</p>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Two zero representations (positive/negative zero).</li>
+                        <li>Arithmetic operations are complex.</li>
+                        <li>Range is not symmetric.</li>
+                    </ul>
+
+                    <h3 id="ones-complement autoShow" class="underline autoShow">One's Complement</h3>
+                    <p class="autoShow">Negative numbers found by flipping all bits of the positive number.</p>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Separate +0 and -0 representations.</li>
+                        <li>Needs end-around carry for addition.</li>
+                    </ul>
+
+                    <h3 id="twos-complement" class="underline autoShow">Two's Complement</h3>
+                    <p class="autoShow">Invert all bits and add 1 for negative numbers. Used in almost all computers
+                        today.</p>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Asymmetric range (one extra negative value).</li>
+                        <li>Requires sign check for conversion.</li>
+                    </ul>
+                </section>
+
+                <section class="topics flex">
+                    <h2 id="03" class="underline autoShow">3. Floating-Point Representation (IEEE 754)</h2>
+                    <p class="autoShow">Used for representing real numbers using sign, exponent, and mantissa.</p>
+                    <h3 class="autoShow">32-bit Single Precision Format:</h3>
+                    <h3 class="underline autoShow">Features:</h3>
+                    <ul class="autoShow">
+                        <li>Uses 1 bit for sign, 8 bits for exponent, and 23 bits for mantissa.</li>
+                        <li>Follows IEEE 754 standard for floating-point representation.</li>
+                        <li>Efficient for storing real numbers with moderate precision.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Limited precision due to smaller mantissa.</li>
+                        <li>Can cause rounding errors in calculations.</li>
+                    </ul>
+
+                    <h3 class="autoShow">64-bit Double Precision Format:</h3>
+                    <h3 class="underline autoShow">Features:</h3>
+                    <ul class="autoShow">
+                        <li>Can represent very large and small values.</li>
+                        <li>Precision via mantissa, range via exponent.</li>
+                        <li>Uses 1 bit for sign, 11 bits for exponent, and 52 bits for mantissa.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Rounding errors.</li>
+                        <li>Cannot represent all decimals exactly.</li>
+                        <li>Consumes more memory than single precision.</li>
+                    </ul>
+
+                
+                </section>
+
+                <section class="topics flex">
+                    <h2 id="04" class="underline autoShow">4. Gray Code Binary Representation</h2>
+                    <p class="autoShow">Each successive value differs by only one bit. Useful in encoders and
+                        error-reduction systems.
+                    </p>
+                    <h3 class="underline autoShow">Features:</h3>
+                    <ul class="autoShow">
+                        <li>Reduces transition errors.</li>
+                        <li>Simple bitwise conversion rules.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Arithmetic is complex.</li>
+                    </ul>
+                </section>
+
+                <!-- 5. Binary-Coded Decimal (BCD) -->
+                <section class="topics flex">
+                    <h2 id="05" class="autoShow">5. Binary-Coded Decimal (BCD) Representation</h2>
+                    <p class="autoShow">Each decimal digit is represented by its own 4-bit binary value. Used in digital
+                        clocks, calculators, etc.</p>
+                    <h3 class="underline autoShow">Features:</h3>
+                    <ul class="autoShow">
+                        <li>Each decimal digit is represented using 4-bit binary.</li>
+                        <li>Easy conversion between binary and human-readable decimal.</li>
+                        <li>Useful in financial and digital display systems.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Inefficient storage—wastes bits compared to pure binary.</li>
+                        <li>Arithmetic operations are more complex.</li>
+                    </ul>
+                </section>
+
+                <section class="topics flex">
+                    <h2 id="06" class="underline autoShow">6. Excess-3 Code Representation</h2>
+                    <p class="autoShow">Decimal digits encoded as 4-bit binary values with +3 offset. Simplifies some
+                        arithmetic and
+                        error detection.</p>
+                    <h3 class="underline autoShow">Features:</h3>
+                    <ul class="autoShow">
+                        <li>Avoids negative digit codes.</li>
+                        <li>Useful for some error detection.</li>
+                    </ul>
+                    <h3 class="underline autoShow">Limitations:</h3>
+                    <ul class="autoShow">
+                        <li>Space inefficient for large numbers.</li>
+                        <li>Limited use compared to other codes.</li>
+                    </ul>
+                </section>
+            </div>
+
+
+
+        </main>
+        <div class="btn-div">
+            <a href="../index.html" style="text-decoration: none;"><button class="redirect-btn"> ← Previous</button></a>
+            <a href="./chapter02.html" style="text-decoration: none;"><button class="redirect-btn">Next → </button></a>
+        </div>
+    </div>
+
+
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="imp-link-container">
+            <div class="imp-links">
+                <h3>Recommended</h3>
+                <a href="../Recommended/sites.html">Free Sites to Learn to Code</a>
+                <a href="../Recommended/channels.html">YouTube Channels to Learn Programming</a>
+                <a href="../Recommended/programmin-language.html">Easiest Programming Languages in 2025</a>
+            </div>
+
+            <div class="imp-links">
+                <h3>Courses and Tutorials</h3>
+                <a href="../HTML/chapter01">Learn HTML</a>
+                <a href="../CSS/chapter01">Learn CSS</a>
+                <a href="../index.html">Learn JavaScript</a>
+            </div>
+            <div class="imp-links">
+                <h3>Resources/Documentations</h3>
+                <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sabina-parveen-07b58325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="contact-links"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                <a href="https://x.com/SabSde19728" class="contact-links"><i class="fa-brands fa-x-twitter"
+                        style="color: white;"></i></a>
+                <a href="https://github.com/SdeCoder72" class="contact-links" style="color: white;"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="terms-policy">
+                <a href="" class="contact-links">Terms of Service</a>
+                <a href="" class="contact-links">Privacy policy</a>
+            </div>
+            <p><a href=""></a>&copy; 2025 CodeDev, Inc. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/52e827b5ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<!-- reusable code of every topic  -->
+<!--    <header>
+            <h1></h1>
+            <p></p>
+        </header>
+
+        <nav class="navigation">
+            <h2>Table Of Contents</h2>
+            <a href=""></a>
+        </nav>
+
+        <main>
+            <div class="topics">
+                <h2></h2>
+                <p></p>
+                <h3></h3>
+                <ul class="points-content">
+                    <li class="points"></li>
+                </ul>
+            </div>
+        </main>
+
+
+
+
+        <a href=""><button class="btn"> ← Previous</button></a>
+        <a href=""><button class="btn">Next → </button></a> -->
